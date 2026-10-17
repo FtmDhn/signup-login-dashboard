@@ -7,6 +7,7 @@ const userseBox = document.querySelector('.userseBox')
 const _svg = document.querySelector('.mySvg')
 const popUp = document.querySelector('.popUp')
 const popUpInp = document.querySelectorAll('.popUp>input')
+const demo = document.querySelector('.admin-demo')
 const skey = Symbol('sk')
 const sObj = {}
 sObj[skey] = '6ac7791e75a4ce3fe721cfd6'
@@ -25,6 +26,9 @@ if (cookiePass != undefined && cookieUser != undefined) {
 btn.addEventListener('click', () => {
     const mail = inp[0].value
     const pass = inp[1].value
+
+    demo.style.display= 'none'
+
 
     span.forEach(val => val.innerText = '')
     inp.forEach(val => val.classList.remove('error'))
