@@ -36,7 +36,7 @@ This project helped me strengthen my JavaScript skills and understand how fronte
 
 ## 🎬 Ready to explore?
 
-**Live Demo** → [Click here to view the project online](https://your-live-demo-link.com)
+**Live Demo** → [Click here to view the project online]( https://ftmdhn.github.io/signup-login-dashboard/)
 
 **Preview**
 
