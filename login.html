@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="src/css/login.css">
+</head>
+
+<body>
+    <main>
+        <img src="src/img/ChatGPT Image Oct 9, 2026, 02_06_38 PM.png" alt="">
+        <section>
+
+            <div class="dog-wrap">
+                <img src="src/img/dog3.png" alt="Dog" class="dog-img">
+
+                <span class="dog-eye eye-left"></span>
+                <span class="dog-eye eye-right"></span>
+            </div>
+            <h1>Login</h1>
+            <div class="box">
+                <input type="email" placeholder="Email">
+                <span></span>
+                <input type="password" placeholder="Password">
+                <div class="mySvg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12.0003 3C17.3924 3 21.8784 6.87976 22.8189 12C21.8784 17.1202 17.3924 21 12.0003 21C6.60812 21 2.12215 17.1202 1.18164 12C2.12215 6.87976 6.60812 3 12.0003 3ZM12.0003 19C16.2359 19 19.8603 16.052 20.7777 12C19.8603 7.94803 16.2359 5 12.0003 5C7.7646 5 4.14022 7.94803 3.22278 12C4.14022 16.052 7.7646 19 12.0003 19ZM12.0003 16.5C9.51498 16.5 7.50026 14.4853 7.50026 12C7.50026 9.51472 9.51498 7.5 12.0003 7.5C14.4855 7.5 16.5003 9.51472 16.5003 12C16.5003 14.4853 14.4855 16.5 12.0003 16.5ZM12.0003 14.5C13.381 14.5 14.5003 13.3807 14.5003 12C14.5003 10.6193 13.381 9.5 12.0003 9.5C10.6196 9.5 9.50026 10.6193 9.50026 12C9.50026 13.3807 10.6196 14.5 12.0003 14.5Z">
+                        </path>
+                    </svg>
+                </div>
+                <span></span>
+                <div>
+                    <label for="rem">remember me</label>
+                    <input type="checkbox" name="" id="rem">
+                </div>
+                <button>Login</button>
+            </div>
+            <p>Not a memver ? </p>
+            <a href="index.html">Signup now</a>
+        </section>
+        <div class="userseBox"></div>
+        <div class="popUp">
+            <span onclick="this.parentElement.style.display = 'none'">X</span>
+            <input type="text">
+            <input type="text">
+            <button onclick="myedite()">Edite</button>
+        </div>
+
+    </main>
+    <div class="admin-demo">
+        <div class="demo-heading">
+            <span class="demo-icon">♙</span>
+            <div>
+                <h3>Admin Demo Account</h3>
+                <p>Explore the admin dashboard</p>
+            </div>
+            <span class="demo-badge">DEMO</span>
+        </div>
+
+        <div class="demo-field">
+            <div>
+                <span class="demo-label">Email</span>
+                <p id="demoEmail">ftmdhn@gmail.com</p>
+            </div>
+            <button type="button" onclick="copyDemo('demoEmail')" aria-label="Copy admin email">Copy</button>
+        </div>
+
+        <div class="demo-field">
+            <div>
+                <span class="demo-label">Password</span>
+                <p id="demoPassword">Ftm2003@</p>
+            </div>
+            <button type="button" onclick="copyDemo('demoPassword')" aria-label="Copy admin password">Copy</button>
+        </div>
+
+        <p class="demo-note">For portfolio demonstration only.</p>
+    </div>
+</body>
+<script src="src/js/Cookie.js"></script>
+<script src="src/js/login.js"></script>
+
+</html>
