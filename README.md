@@ -41,8 +41,7 @@ This project helped me strengthen my JavaScript skills and understand how fronte
 **Preview**
 
 <br>
-
-<img width="1536" alt="Sign Up & Login Dashboard Preview" src="path/to/your-preview-image.png" />
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/af50e109-0c5c-485e-abe0-cd5453c5009a" />
 
 ## Features
 
