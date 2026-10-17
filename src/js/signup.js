@@ -7,6 +7,7 @@ const sObj = {}
 sObj[skey] = '6ac7791e75a4ce3fe721cfd6'
 const Api = 'https://' + sObj[skey] + '.mockapi.io/login-app'
 
+
 btn.addEventListener('click', () => {
     const name = inp[0].value
     const mail = inp[1].value
@@ -50,43 +51,36 @@ btn.addEventListener('click', () => {
         if (res.ok) {
             return res.json();
         }
-        throw new Error('Could not delete user')
-    }).then(tasks => {
-
-        console.log(tasks);
-        if (tasks == undefined) {
-
-            fetch(Api, {
-                method: 'POST',
-                headers: { 'content-type': 'application/json' },
-                body: JSON.stringify(newTask)
-            }).then(res => {
-                if (res.ok) {
-                    return res.json();
-                }
-
-            }).then(task => {
-                console.log(task);
-                alert('sucssesfull!')
-                location.assign('login.html')
-
-            }).catch(error => {
-
-                console.log(error);
-
-            })
+    }).then(data => {
+        if (data == undefined) {
+            console.log(('add plz'));
+            addUser(newTask)
+        } else {
+            alert('this mail is exist in my database!')
         }
-        else alert('email existed !')
-
-    }).catch(error => {
-
-        console.log(error);
 
     })
 
 })
 
-
+function addUser(temp) {
+    fetch(Api, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(temp)
+    }).then(res => {
+        if (res.ok) {
+            return res.json();
+        }
+    }).then(task => {
+        console.log(task);
+        alert('user added!')
+        location.assign('login.html')
+    }).catch(error => {
+        console.log(error);
+        alert('try again!')
+    })
+}
 
 
 function removeEyeDog() {
